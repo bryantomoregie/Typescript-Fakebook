@@ -1,0 +1,112 @@
+* {
+  font-family: 'Arial';
+}
+
+html{
+  background-color: #1A1F27;
+}
+
+/* App */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Create Post  */
+#create {
+  display: inherit;
+  flex-direction: inherit;
+  margin-bottom: 1.25em;
+  width: 100%;
+  background-color: #11151A;
+  padding: 1em;
+  border: 1px solid rgb(106, 110, 121);
+}
+
+textarea {
+  margin-bottom: 1.25em;
+  border-radius: 4px;
+  background-color: #2D3238;
+  border: 1px solid rgb(106, 110, 121);
+  resize: none;
+  outline: none;
+  padding: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+textarea:focus{
+  border: 1px solid #5BC6CC;
+}
+
+.post-button {
+  width: fit-content;
+  background-color: #5BC6CC;
+  color: white;
+  margin-left: auto;
+  border: 0;
+  padding: 0.5em 1em;
+  font-size: 15px;
+  border-radius: 5%;
+  cursor: pointer;
+  outline: none;
+  transition: all 1.0s;
+}
+
+.post-button::after{
+  background-color: #00ACA0;
+}
+
+
+/* Post Container */
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 70vh;
+  text-align: left;
+}
+
+
+/* Post */
+h2{
+  font-size: 39px;
+  color: white;
+}
+
+.post {
+  text-align: left;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  width: 100%;
+  background-color: rgb(45, 50, 56);
+  border: 1px solid;
+  border-color: transparent rgb(106, 110, 121) transparent rgb(106, 110, 121);
+  font: 18px "Open Sans", sans-serif;
+}
+
+.postTime{
+  color: #00927C
+}
+
+.postText{
+  color: #EBEEF4;
+}
+
+.timeIconContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-trash{
+  color: #EBEEF4;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+
